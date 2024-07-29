@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Rich Cuisine</title>
+    <link rel="icon" href="images/logo.PNG">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <img src="images/logoicon.PNG" height="80px" width="190px">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="food.html">MENU</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li class="reservation"><a href="reservation.html">RESERVATION</a></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <h2>Make a Reservation</h2>
+        <section class="timing-section">
+            <h2>Restaurant Timings</h2>
+            <ul class="timing-list">
+              <li>Monday: 10:00 AM - 10:00 PM</li>
+              <li>Tuesday: 10:00 AM - 10:00 PM</li>
+              <li>Wednesday: 10:00 AM - 10:00 PM</li>
+              <li>Thursday: 10:00 AM - 10:00 PM</li>
+              <li>Friday: 10:00 AM - 11:00 PM</li>
+              <li>Saturday: 10:00 AM - 11:00 PM</li>
+              <li>Sunday: 11:00 AM - 9:00 PM</li>
+            </ul>
+        </section>
+        <form id="reservation-form" action="submit_reservation.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="20" required>
+            
+            <label for="seats">Select Seats: (optional)</label>
+            <div class="seat-container">
+                <div class="seat"><input type="checkbox" id="seat1" name="seats[]" value="1"><label class="seatlabel" for="seat1">s0</label></div>
+                <div class="seat unavailable"><input type="checkbox" id="seat2" name="seats[]" value="2" checked disabled><label class="seatlabel" for="seat2">s1</label></div>
+                <div class="seat"><input type="checkbox" id="seat3" name="seats[]" value="3"><label class="seatlabel" for="seat3">s2</label></div>
+                <div class="seat unavailable"><input type="checkbox" id="seat4" name="seats[]" value="4" checked disabled><label class="seatlabel" for="seat4">s3</label></div>
+                <div class="seat"><input type="checkbox" id="seat5" name="seats[]" value="5"><label class="seatlabel" for="seat5">s5</label></div>
+                <div class="seat"><input type="checkbox" id="seat6" name="seats[]" value="6"><label class="seatlabel" for="seat6">s6</label></div>
+                <div class="seat unavailable"><input type="checkbox" id="seat7" name="seats[]" value="7" checked disabled><label class="seatlabel" for="seat7">s7</label></div>
+                <div class="seat"><input type="checkbox" id="seat8" name="seats[]" value="8"><label class="seatlabel" for="seat8">s8</label></div>
+                <div class="seat"><input type="checkbox" id="seat9" name="seats[]" value="9"><label class="seatlabel" for="seat9">s9</label></div>
+                <div class="seat unavailable"><input type="checkbox" id="seat10" name="seats[]" value="10" checked disabled><label class="seatlabel" for="seat10">s10</label></div>
+            </div>
+            
+            <label for="special">Special Requests:</label>
+            <textarea id="special" name="special" rows="4"></textarea>
+            
+            <button type="submit" class="redirect-button">Submit</button>
+        </form>
+        <div id="warning-message" style="color: orangered; text-align: center; margin-top: 1rem;"></div>
+    </main>
+   <script src="script.js"></script>
+</body>
+</html>

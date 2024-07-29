@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.PNG">
+    <title>Contact Us - Rich Cuisine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.PNG">
+</head>
+<body>
+    <div class="container">
+        <img src="images/logoicon.PNG" height="80px" width="190px" alt="Rich Cuisine Logo">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="food.html">MENU</a></li>
+              
+               
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li class="reservation"><a href="reservation.html">RESERVATION</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>Address:</strong> 21 Revolution Street, Paris, France</p>
+                <p style="color: #fff;"><strong>Phone:</strong> +1 555 123456</p>
+                <p style="color: #fff;"><strong>Email:</strong> <a>Richcuisine@gmail.com</a></p>
+            </div>
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                     <div class="button-container">
+                    <a href="message.html">Send Message</a>
+                </div>
+                </form>
+            </div>
+            <div class="map">
+                <h3>Find Us</h3>
+                <!-- Embed Google Maps or other map service -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999663001284!2d2.292292615674452!3d48.85884407928782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d6e0a9c91b%3A0x75d070409299a116!2s21%20Revolution%20St%2C%2048801%20Paris%2C%20France!5e0!3m2!1sen!2sus!4v1658833561234!5m2!1sen!2sus" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
